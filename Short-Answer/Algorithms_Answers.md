@@ -15,3 +15,11 @@ c)
 bunnyEars is being called recursively and subtracting one from the number of bunnies that is passed in until the number of bunnies is zero. So the number of bunnies will determine how many times the function is called recursively. Then once each function call is returned, 2 is added each time to the number of bunnies being return from the function. The number of times this operation happens will also increase as the number of bunnies increases.
 
 ## Exercise II
+
+Start by finding the middle floor between the top and bottom floors.
+Then drop an egg from that floor.
+If the egg breaks then find the middle floor between the lowest floor and the floor you are on now and drop an egg
+If the egg doesn't break then find the middle floor between the floor you are on now and the top floor and drop an egg
+Continue this process until the highest floor where an egg can be dropped without breaking is determined.
+
+The time for this is O(log n) because you are eliminating halve of the amount of floors you have to check each time you move to another floor and drop an egg.
